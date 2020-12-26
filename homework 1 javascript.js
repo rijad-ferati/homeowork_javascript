@@ -1,17 +1,18 @@
-// Segment2 
-let quantity = 300;
-let unitPrice = 119.5;
-let taxRate = 0.05;
-let taxPerUnit = unitPrice * taxRate;
-let totalPrice = quantity * (unitPrice + taxPerUnit);
-document.getElementById("result").innerHTML = "The Total price of the Phones is: " + totalPrice;
-// Segment 2
+// // Segment 1 the easy one, given inputs 
+
+let quantity_0 = 300;
+let unitPrice_0 = 119.5;
+let taxRate_0 = 5;
+let taxPerUnit_0 = unitPrice_0 * (taxRate_0 / 100);
+let totalPrice_0 = quantity_0 * (unitPrice_0 + taxPerUnit_0);
+document.getElementById("result_1").innerHTML = "The Total price of the Phones is: " + totalPrice_0;
+// // Segment 2
 
 function calc() {
-    let quantity = (document.getElementById('quantity')).value;
-    let unitPrice = (document.getElementById('UnitPrice')).value;
-    let taxPercentage = (document.getElementById('taxPercentage')).value;
-    let totalPrice = quantity * (unitPrice + taxPerUnit);
-
-    getElementById('result-2').innerHTML = "The Result is" + totalPrice
+    let unitPrice = parseFloat(document.getElementById('unit_price').value);
+    let quantity = parseFloat(document.getElementById('quantity_0').value);
+    let taxPercentage = parseFloat(document.getElementById('tax_percentage').value);
+    let taxPerUnit = (taxPercentage / 100 * unitPrice);
+    let totalPrice = (quantity * (unitPrice + taxPerUnit));
+    getElementById = (result_2).innerHTML = `The Result is: ` + totalPrice + `$`;
 }
