@@ -1,1 +1,1 @@
-# homeowork_javascript
+# homework_javascript
