@@ -6,7 +6,8 @@ let taxRate_0 = 5;
 let taxPerUnit_0 = unitPrice_0 * (taxRate_0 / 100);
 let totalPrice_0 = quantity_0 * (unitPrice_0 + taxPerUnit_0);
 document.getElementById("result_1").innerHTML = "The Total price of the Phones is: " + totalPrice_0;
-// // Segment 2
+
+// // Segment 2 Interactive Form, advanced :)
 
 function calc() {
     let unitPrice = parseFloat(document.getElementById('unit_price').value);
