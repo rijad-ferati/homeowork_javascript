@@ -1,0 +1,13 @@
+#header {
+  color: red;
+  text=align: center;
+  position: relative;
+  display: flex;
+}
+
+#recipe-name {
+  color: black;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  position: relative;
+  display: flex;
+}
