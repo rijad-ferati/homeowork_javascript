@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework review Advanced JS 1</title>
+  </head>
+  <body>
+    <label for="searchUser">Search for a User:</label>
+    <input type="text" name="search-user" id="search-user" />
+    <p id="error-message"></p>
+    <br />
+    <br />
+    <button type="button" id="search-button">Search</button>
+    <button type="button" id="reset-button">Reset</button>
+    <form>
+      <label for="first_name">Enter your first name: </label>
+      <input type="text" name="first_name" id="first_name" />
+      <br /><br />
+      <label for="first_name">Enter your last name: </label>
+      <input type="text" name="last_name" id="last_name" />
+      <br /><br />
+      <label for="user_age">Enter your age: </label>
+      <input type="number" name="user_age" id="user_age" />
+      <br /><br />
+      <label for="user_city">In Which City do you live? </label>
+      <input type="text" name="user_city" id="user_city" />
+      <br /><br />
+      <label for="user_country">In which country do you live? </label>
+      <input type="text" name="user_country" id="user_country" />
+      <br /><br />
+      <label for="user_spouse"
+        >If you are married enter the name of your spouse, otherwise leave this
+        field empty
+      </label>
+      <input type="text" name="user_spouse" id="user_spouse" />
+      <br /><br />
+      <label for="user-pets">Select pets you have:</label>
+      <select name="user-pets" id="user-pets" multiple>
+        <option value="no-pets" selected>I have no Pets</option>
+        <option value="dog">Dog</option>
+        <option value="cat">Cat</option>
+        <option value="lizard">Lizard</option>
+        <option value="snake">Snake</option>
+        <option value="parrot">Parrot</option>
+        <option value="Other">
+          Please Specify<input type="text" name="other-pet" id="other-pet" />
+        </option>
+      </select>
+
+      <!-- <input type="text" name="user_pets" id="user_pets" /> -->
+      <button type="button" id="register_user_button">Submit</button>
+      <br />
+      <button type="button" id="delete-user-button">Delete User</button>
+    </form>
+    <div>
+      <table id="table" border="1px"></table>
+    </div>
+
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
